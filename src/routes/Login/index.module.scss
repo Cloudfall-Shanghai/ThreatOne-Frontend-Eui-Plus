@@ -1,0 +1,66 @@
+// @media all and (max-width: 480px) {
+//   .login {
+//     max-width: 100vw;
+//     min-height: 600px;
+//     min-width: 800px;
+//   }
+//   .login_centerbox {
+//     width: auto !important;
+//   }
+//   .login_left {
+//     display: none !important;
+//     background-color: green;
+//   }
+//   .login_right {
+//     width: 100% !important;
+//   }
+// }
+
+.container {
+  background-image: url("../../assets/back.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  .center-form {
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    & > div {
+      width: 50%;
+      height: 100%;
+    }
+    .left-box {
+      background-color: #f7f7f7;
+      border-radius: 10px 0 0 10px;
+      & > img {
+        width: 300px;
+      }
+    }
+    .right-box {
+      border-radius: 0 10px 10px 0;
+      background-color: #ffffff;
+      & > div {
+        width: 300px;
+        .box-header {
+          width: 170px;
+          margin-bottom: 20px;
+        }
+        Button {
+          width: 214px;
+          margin: 10px 0 10px 0;
+        }
+        Button[type="Empyt"] {
+          font-size: 13px;
+          div[data-function="MSAD"] {
+            width: 100%;
+            img {
+              width: 18px;
+              margin: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

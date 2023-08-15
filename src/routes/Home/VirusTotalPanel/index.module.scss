@@ -1,0 +1,46 @@
+.tencent-threat-panel-container {
+  // height: calc(100vh - 360px);
+  // overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    background-color: rgba(173, 176, 184, 0.8);
+    -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.5);
+  }
+
+  .more {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  .vtBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .vtBoxItem {
+      width: 45%;
+      min-width: 300px;
+      display: flex;
+      float: left;
+      justify-content: space-between;
+      height: 30px;
+      line-height: 30px;
+      margin: 10px 20px;
+      .tag {
+        padding: 0 5px;
+        line-height: 30px;
+        height: 30px;
+        border-radius: 5px;
+      }
+    }
+  }
+}

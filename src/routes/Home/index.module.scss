@@ -1,0 +1,80 @@
+.home-container {
+  .header-box {
+    width: 100%;
+    height: 32px;
+    justify-content: space-between;
+    & > div:first-of-type {
+      align-items: flex-end;
+    }
+    .header-title {
+      font-size: 26px;
+      color: #000;
+      font-weight: bold;
+    }
+    .header-subtitle {
+      margin: 0 0 4px 10px;
+    }
+    .header-logo {
+      width: 170px;
+    }
+  }
+  .section-box {
+    margin: 0 auto;
+    padding: 24px 100px;
+    background: #fff;
+    align-items: flex-start;
+    .query-bar {
+      justify-content: space-between;
+      align-items: flex-start;
+      button {
+        margin: 10px 0 0 0;
+      }
+    }
+    .tab-box {
+      margin: 0 0 0 10px;
+      width: 100%;
+    }
+  }
+}
+
+// 中小型设备
+@media all and (max-width: 798px) {
+  .home-container {
+    .header-box {
+      width: 100%;
+      height: 32px;
+      justify-content: space-between;
+      & > div:first-of-type {
+        align-items: flex-end;
+      }
+      .header-title {
+        font-size: 20px;
+        color: #000;
+        font-weight: bold;
+      }
+      .header-subtitle {
+        font-size: 10px;
+        margin: 0 0 4px 2px;
+      }
+      .header-logo {
+        width: 100px;
+      }
+    }
+    .section-box {
+      margin: 0 auto;
+      padding: 24px;
+      background: #fff;
+      .query-bar {
+        justify-content: space-between;
+        align-items: flex-start;
+        button {
+          margin: 10px 0 0 0;
+        }
+      }
+      .tab-box {
+        margin: 0 0 0 10px;
+        width: 100%;
+      }
+    }
+  }
+}

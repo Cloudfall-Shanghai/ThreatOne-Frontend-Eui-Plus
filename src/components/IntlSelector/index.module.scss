@@ -1,0 +1,34 @@
+.intl-box {
+  font-size: 12px;
+  margin: 8px 4px 8px 0;
+  align-self: flex-end;
+  & > span {
+    margin: 4px;
+    &::after {
+      content: "|";
+      margin: 0 0 0 4px;
+    }
+    &:last-child::after {
+      content: "";
+    }
+  }
+}
+
+// 中小型设备
+@media all and (max-width: 798px) {
+  .intl-box {
+    font-size: 10px;
+    margin: 8px 2px 8px 0;
+    align-self: flex-end;
+    & > span {
+      margin: 4px;
+      &::after {
+        content: "|";
+        margin: 0 0 0 4px;
+      }
+      &:last-child::after {
+        content: "";
+      }
+    }
+  }
+}
